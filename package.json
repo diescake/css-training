@@ -4,8 +4,11 @@
   "main": "index.js",
   "repository": "git@github.com:diescake/css-training.git",
   "scripts": {
-    "start": ""
+    "start": "live-server"
   },
   "author": "diescake",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.0"
+  }
 }
