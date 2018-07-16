@@ -1,15 +1,5 @@
 @charset "UTF-8";
 
-html {
-  font-size: 62.5%;
-}
-
-body {
-  color: #333;
-  font-size: 1.2rem;
-  font-family: 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
-}
-
 *,
 *::before,
 *::after {
@@ -24,27 +14,38 @@ a:active {
   text-decoration: none;
 }
 
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: #333;
+  font-size: 1.2rem;
+  font-family: 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+}
+
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.hidden {
+  display: none;
+}
+
+.wrapper {
+  width: 970px;
+  margin: 30px auto 40px;
+}
+
+/* header */
+
 .header {
   width: 100%;
   padding: 28px 0 10px;
   background: url('../images/bg-header.gif') repeat-x;
   box-shadow: 0 0 10px 1px #e3e3e3;
-}
-
-.logo {
-  width: 225px;
-  height: 56px;
-  margin: 0 auto;
-  background: url('../images/logo.png') no-repeat;
-  overflow: hidden;
-  text-indent: 100%;
-  white-space: nowrap;
-}
-
-.logo a {
-  display: block;
-  width: 100%;
-  height: 100%;
 }
 
 .global-nav {
@@ -76,16 +77,23 @@ a:active {
   color: #fff;
 }
 
-.wrapper {
-  width: 970px;
-  margin: 30px auto 40px;
+.logo {
+  width: 225px;
+  height: 56px;
+  margin: 0 auto;
+  background: url('../images/logo.png') no-repeat;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
 }
 
-.clearfix::after {
-  content: '';
+.logo a {
   display: block;
-  clear: both;
+  width: 100%;
+  height: 100%;
 }
+
+/* main */
 
 .main {
   display: block;
@@ -93,10 +101,54 @@ a:active {
   width: 660px;
 }
 
+.hot-topic-left {
+  float: left;
+  background-image: url('../images/hot-topic.jpg');
+  width: 330px;
+  height: 300px;
+}
+
+.hot-topic-right {
+  float: right;
+  background-color: black;
+  width: 330px;
+  height: 300px;
+}
+
+.date-block {
+  margin-top: 70px;
+}
+
+.date-label {
+  padding: 3px 7px;
+  background-color: white;
+  font-size: 1.4rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  vertical-align: middle;
+}
+
+.title {
+  margin: 15px 25px 0 25px;
+  color: white;
+  font-size: 2rem;
+  line-height: 30px;
+}
+
+.description {
+  margin: 15px 25px 0 25px;
+  color: white;
+  line-height: 18px;
+}
+
+/* sidemenu */
+
 .sidemenu {
   float: right;
   width: 275px;
 }
+
+/* foooter */
 
 .footer {
   width: 100%;
