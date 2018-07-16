@@ -227,19 +227,13 @@ ul {
 
 /* articles */
 
-.articles {
-}
-
-.articles .cards {
-}
-
 .articles a {
   color: #666;
   transition: opacity 0.15s;
 }
 
 .articles a:hover {
-  opacity: 0.85;
+  opacity: 0.8;
 }
 
 .articles .card:nth-of-type(odd) {
@@ -252,27 +246,23 @@ ul {
 
 .articles .card {
   position: relative;
-  margin-bottom: 30px;
   display: block;
+  padding: 210px 15px 0;
   width: 315px;
   height: 360px;
-  line-height: 1.5;
-  box-shadow: 3px 3px 10px 1px #e3e3e3;
-}
-
-.articles .image {
-  width: 315px;
-  height: 210px;
+  margin-bottom: 30px;
+  box-shadow: 6px 6px 8px -4px rgba(0, 0, 0, 0.15);
 }
 
 .articles .title {
-  padding: 20px 10px 0;
+  margin-top: 30px;
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
+  line-height: 1.6;
 }
 
 .articles .desc {
-  padding: 8px 10px 0;
+  margin-top: 5px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -280,12 +270,24 @@ ul {
 
 .articles .date {
   position: absolute;
-  bottom: 15px;
+  display: block;
   right: 0;
-  width: 50%;
+  bottom: 15px;
+  width: 160px;
+  padding: 4px;
+  background-color: #b5d264;
+  color: #2d3d54;
   text-align: center;
-  background-color: #9c0;
+  letter-spacing: 1px;
   font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.articles .image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 /* sidemenu */
