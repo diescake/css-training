@@ -24,6 +24,10 @@ body {
   font-family: 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
 }
 
+ul {
+  list-style: none;
+}
+
 .clearfix::after {
   content: '';
   display: block;
@@ -101,7 +105,7 @@ body {
   width: 660px;
 }
 
-/* hot-topic */
+/* hot topic */
 
 .hot-topic {
   display: block;
@@ -155,6 +159,49 @@ body {
   font-weight: bold;
   font-size: 1.1rem;
   line-height: 1;
+}
+
+/* news */
+
+.slash-bg {
+  background: url('../images/bg-slash.gif') repeat;
+}
+
+.news-head {
+  padding: 6px 10px;
+  line-height: 20px;
+  width: 100%;
+  font-size: 1.5rem;
+}
+
+.news {
+}
+
+.news .list {
+  padding: 10px 15px;
+}
+
+.news .date {
+  font-weight: bold;
+}
+
+.news .category-news,
+.news .category-topic {
+  padding: 3px;
+  border-radius: 3px;
+  margin: 0 10px;
+  color: white;
+  font-weight: bold;
+}
+.news .category-news {
+  background-color: blue;
+}
+
+.news .category-topic {
+  background-color: red;
+}
+
+.news .desc {
 }
 
 /* sidemenu */
