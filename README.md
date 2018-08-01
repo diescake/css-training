@@ -2,9 +2,9 @@
 
 My simple web application for trying CSS
 
-* sandard
-* grid
-* single-page
+- /standard
+- /grid
+- /single-page
 
 ## Installation
 
@@ -20,5 +20,5 @@ yarn start
 
 ## References
 
-* HTML5/CSS3 モダンコーディング
-  * https://www.shoeisha.co.jp/book/detail/9784798141572
+- HTML5/CSS3 モダンコーディング
+  - https://www.shoeisha.co.jp/book/detail/9784798141572
