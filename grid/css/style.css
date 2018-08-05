@@ -36,12 +36,12 @@ a:active {
   background-color: #fff;
 }
 
-.m-size {
-  width: 360px;
+.item-m {
+  width: 364px;
 }
 
-.l-size {
-  width: 720px;
+.item-l {
+  width: 732px;
 }
 
 .item .image {
