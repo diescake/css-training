@@ -26,6 +26,7 @@ a:active {
   text-decoration: none;
 }
 
+/* item */
 .item {
   width: 180px;
   margin-bottom: 4px;
@@ -33,6 +34,10 @@ a:active {
   border-bottom: 3px solid;
   border-radius: 5px;
   background-color: #fff;
+}
+
+.m-size {
+  width: 360px;
 }
 
 .item .image {
