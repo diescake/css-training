@@ -40,6 +40,10 @@ a:active {
   width: 360px;
 }
 
+.l-size {
+  width: 720px;
+}
+
 .item .image {
   display: block;
   width: 100%;

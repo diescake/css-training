@@ -9,6 +9,15 @@
 </head>
 
 <body>
+  <section class="item l-size item-maindish">
+    <a href="#">
+      <img class="image" src="images/image_L_1.jpg" alt="main dishes">
+      <div class="category">MAIN DISH</div>
+      <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididuntut labore et dolore magna
+        aliqua.
+      </p>
+    </a>
+  </section>
   <section class="item m-size item-appetizer">
     <a href="#">
       <img class="image" src="images/image_M_1.jpg" alt="appetizers">
@@ -113,6 +122,10 @@
       }, {
         itemSelector: '.m-size',
         columnWidth: 360, // px
+        gutter: 4 // px
+      }, {
+        itemSelector: '.l-size',
+        columnWidth: 720, // px
         gutter: 4 // px
       }
     );
