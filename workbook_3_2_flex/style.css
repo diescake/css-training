@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  border-bottom: 1px solid tomato;
+  padding: 0 15px;
+}
+
+.content {
+  display: flex;
+  /* height: calc(100vh - 50px - 50px); */
+  min-height: 300px;
+  padding: 30px 0;
+}
+
+.main {
+  order: 1;
+  flex-grow: 3;
+  padding: 0 15px;
+  flex-grow: 12;
+}
+
+.aside_01 {
+  padding: 0 15px;
+  border-right: 1px solid darkcyan;
+  order: -1;
+  flex-grow: 1;
+}
+
+.aside_02 {
+  padding: 0 15px;
+  border-left: 1px solid darkcyan;
+  order: 1;
+  flex-grow: 1;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  padding: 0 15px;
+  border-top: 1px solid darkgreen;
+}
