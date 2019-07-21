@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
+
+.header {
+  height: 30px;
+  border: 1px solid tomato;
+  order: 1;
+}
+
+.main {
+  display: flex;
+  order: 2;
+  height: calc(100vh - 30px - 30px);
+}
+
+.content {
+  border: 1px solid darkcyan;
+  order: 1;
+  flex-grow: 3;
+}
+
+.nav {
+  border: 1px solid darkorange;
+  order: 2;
+  flex-grow: 1;
+}
+
+.footer {
+  height: 30px;
+  border: 1px solid darkgreen;
+  order: 4;
+}
