@@ -28,18 +28,19 @@
   flex-grow: 12;
 }
 
-.aside_01 {
+.aside {
   padding: 0 15px;
-  border-right: 1px solid darkcyan;
-  order: -1;
   flex-grow: 1;
 }
 
-.aside_02 {
-  padding: 0 15px;
+.aside_left {
+  border-right: 1px solid darkcyan;
+  order: -1;
+}
+
+.aside_right {
   border-left: 1px solid darkcyan;
   order: 1;
-  flex-grow: 1;
 }
 
 .footer {
