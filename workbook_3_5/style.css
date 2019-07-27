@@ -16,9 +16,13 @@
   width: 800px;
 }
 
-.item-list-navigation > ul > li {
-  display: inline;
-  padding: 0 3px;
-  line-height: 30px;
+.item-list-ul {
+  display: flex;
+  flex-wrap: wrap;
   text-decoration: underline;
+  list-style: none;
+}
+
+.item-list-ul > li {
+  margin: 5px 15px 5px 0;
 }
