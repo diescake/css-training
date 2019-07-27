@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: "Hiragino Kaku Gothic ProN"
+}
+
+.container {
+  padding: 30px;
+}
+
+.item-list-navigation {
+  margin-top: 25px;
+}
+
+.item-list-ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item-list-ul > *::before {
+  content: '#';
+}
+
+.item-list-ul > * {
+  margin: 5px 6px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
