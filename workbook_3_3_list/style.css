@@ -4,6 +4,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  font-family: "Hiragino Kaku Gothic ProN"
 }
 
 .grid {
