@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: "Hiragino Kaku Gothic ProN"
+}
+
+.container {
+  padding: 20px;
+}
+
+.table-layout {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 2fr;
+  width: 1000px;
+  border: 0px solid gray;
+  border-width: 0 1px 1px 0;
+}
+
+.table-layout > * {
+  padding: 15px 8px;
+  border: 0px solid gray;
+  border-width: 1px 0 0 1px;
+}
+
+.table-layout > *:nth-child(odd) {
+  background-color: #eee;
+}
