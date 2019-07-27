@@ -16,16 +16,16 @@
   display: grid;
   grid-template-columns: 1fr 2fr 1fr 2fr;
   width: 1000px;
-  border: 0px solid gray;
-  border-width: 0 1px 1px 0;
+  border-right: 1px solid gray;
+  border-bottom: 1px solid gray;
 }
 
 .table-layout > * {
   padding: 15px 8px;
-  border: 0px solid gray;
-  border-width: 1px 0 0 1px;
+  border-top: 1px solid gray;
+  border-left: 1px solid gray;
 }
 
 .table-layout > *:nth-child(odd) {
-  background-color: #eee;
+  background-color: #efefef;
 }
