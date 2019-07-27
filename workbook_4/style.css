@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1, input {
+  font-family: "Hiragino Kaku Gothic ProN";
+}
+
+.container {
+  padding: 30px;
+}
+
+.forms-container {
+  padding: 30px 0;
+}
+
+.icon-input {
+  display: flex;
+  align-items: center;
+  padding: 7px 7px;
+  border: 1px solid gray;
+  width: 200px;
+}
+
+.icon-input > input {
+  border: none;
+  margin-left: 5px;
+  width: 200px;
+}
