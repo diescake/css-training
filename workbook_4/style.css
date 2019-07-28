@@ -115,3 +115,45 @@ h1, input, label {
   background-color: tomato;
   color: white;
 }
+
+/* チェックボックス */
+
+.checkbox-container {
+  display: flex;
+
+  margin-top: 30px;
+  color: #3d4858;
+}
+
+.checkbox-input {
+  display: none;
+}
+
+.checkbox-label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-right: 13px;
+}
+
+.checkbox-input:checked + .checkbox-label::after,
+.checkbox-label::before {
+  display: block;
+  content: ' ';
+  margin-right: 10px;
+}
+
+.checkbox-input:checked + .checkbox-label::after {
+  position: absolute;
+  background-color: tomato;
+  top: 4px;
+  left: 3px;
+  width: 8px;
+  height: 8px;
+}
+
+.checkbox-label::before {
+  border: 1px solid #3d4858;
+  width: 14px;
+  height: 14px;
+}
