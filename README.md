@@ -1,20 +1,22 @@
-# css-training
+# My CSS training
 
-My simple web application for trying CSS
+Keep the records of my trying out HTML/CSS exercises.
 
-- [standard](./standard)
-- [grid](./grid)
-- [single-page (under construction)](./single-page)
-- [workbook_3_1_flex](./workbook_3_1_flex)
-- [workbook_3_1_grid](./workbook_3_1_grid)
-- [workbook_3_2_flex](./workbook_3_2_flex)
-- [workbook_3_2_grid](./workbook_3_2_grid)
-- [workbook_3_3_grid](./workbook_3_3_grid)
-- [workbook_3_3_list](./workbook_3_3_list)
-- [workbook_3_4](./workbook_3_4)
-- [workbook_3_5](./workbook_3_5)
-- [workbook_3_5_tag](./workbook_3_5_tag)
-- [workbook_4](./workbook_4)
+- [1] The HTML5/CSS3 Modern Codings
+  - [standard](./standard)
+  - [grid](./grid)
+  - [single-page (under construction)](./single-page)
+- [2] The CSS Workbook
+  - [workbook_3_1_flex](./workbook_3_1_flex)
+  - [workbook_3_1_grid](./workbook_3_1_grid)
+  - [workbook_3_2_flex](./workbook_3_2_flex)
+  - [workbook_3_2_grid](./workbook_3_2_grid)
+  - [workbook_3_3_grid](./workbook_3_3_grid)
+  - [workbook_3_3_list](./workbook_3_3_list)
+  - [workbook_3_4](./workbook_3_4)
+  - [workbook_3_5](./workbook_3_5)
+  - [workbook_3_5_tag](./workbook_3_5_tag)
+  - [workbook_4](./workbook_4)
 
 ## Installation
 
@@ -28,7 +30,7 @@ yarn
 yarn start
 ```
 
-## My memo
+## MEMO
 
 ### Semantic elements
 
@@ -75,7 +77,7 @@ yarn start
 - `<q>`
   - インラインの引用
 
-#### Other functional elements
+### Other functional elements
 
 - `<mark>`
   - Defines marked/highlighted text
@@ -91,7 +93,7 @@ yarn start
 
 ## References
 
-- HTML5/CSS3 モダンコーディング
+- [1] HTML5/CSS3 モダンコーディング
   - https://www.shoeisha.co.jp/book/detail/9784798141572
-- CSS 実践問題集
+- [2] CSS 実践問題集
   - https://booth.pm/ja/items/1309857
