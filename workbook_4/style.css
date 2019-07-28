@@ -52,3 +52,10 @@ h1, input {
 .icon-input-input:focus + .icon-input-label {
   color: tomato;
 }
+
+.radio-container {
+  margin-top: 30px;
+}
+
+.radio-button {
+}
