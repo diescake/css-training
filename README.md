@@ -2,10 +2,19 @@
 
 My simple web application for trying CSS
 
-- /standard
-- /grid
-- /single-page
-- /webbook_*
+- [standard](./standard)
+- [grid](./grid)
+- [single-page (under construction)](./single-page)
+- [workbook_3_1_flex](./workbook_3_1_flex)
+- [workbook_3_1_grid](./workbook_3_1_grid)
+- [workbook_3_2_flex](./workbook_3_2_flex)
+- [workbook_3_2_grid](./workbook_3_2_grid)
+- [workbook_3_3_grid](./workbook_3_3_grid)
+- [workbook_3_3_list](./workbook_3_3_list)
+- [workbook_3_4](./workbook_3_4)
+- [workbook_3_5](./workbook_3_5)
+- [workbook_3_5_tag](./workbook_3_5_tag)
+- [workbook_4](./workbook_4)
 
 ## Installation
 
