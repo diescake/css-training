@@ -157,3 +157,58 @@ h1, input, label {
   width: 14px;
   height: 14px;
 }
+
+/* チェックボタン */
+
+.checkbutton-container {
+  display: flex;
+  margin-top: 30px;
+  color: #3d4858;
+}
+
+.checkbutton-input {
+  display: none;
+}
+
+.checkbutton-label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: 1px solid #3d4858;
+  padding: 5px;
+  margin-right: 5px;
+}
+
+.checkbutton-input:checked + .checkbutton-label {
+  background-color: tomato;
+  border: 1px solid tomato;
+  color: white;
+}
+
+.checkbutton-label::before,
+.checkbutton-input:checked + .checkbutton-label::after {
+  display: block;
+  content: ' ';
+  margin-right: 8px;
+}
+
+.checkbutton-label::before {
+  border: 1px solid #3d4858;
+  width: 14px;
+  height: 14px;
+}
+
+.checkbutton-input:checked + .checkbutton-label::before {
+  visibility: hidden;
+}
+
+.checkbutton-input:checked + .checkbutton-label::after {
+  position: absolute;
+  width: 12px;
+  height: 8px;
+  top: 7px;
+  left: 6px;
+  border-left: 2px solid white;
+  border-bottom: 2px solid white;
+  transform: rotate(-45deg);
+}
