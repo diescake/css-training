@@ -18,16 +18,37 @@ h1, input {
   padding: 30px 0;
 }
 
-.icon-input {
+.icon-input-container {
+  position: relative;
   display: flex;
   align-items: center;
-  padding: 7px 7px;
-  border: 1px solid gray;
   width: 200px;
 }
 
-.icon-input > input {
-  border: none;
-  margin-left: 5px;
-  width: 200px;
+.icon-input-input {
+  -webkit-appearance: none;
+  outline: none;
+  border: 0;
+
+  padding: 0 8px 0 32px;
+  width: 250px;
+  height: 44px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  transition: all 0.2s ease;
+}
+
+.icon-input-label {
+  position: absolute;
+  margin-left: 8px;
+  color: lightgray;
+  transition: all 0.2s ease;
+}
+
+.icon-input-input:focus {
+  border: 1px solid tomato;
+}
+
+.icon-input-input:focus + .icon-input-label {
+  color: tomato;
 }
