@@ -83,6 +83,7 @@ body {
   width: 230px;
   height: 55px;
   border-radius: 6px;
+  font-size: 1.2rem;
 }
 
 .header-button-gray {
@@ -100,7 +101,7 @@ section {
   grid-template-rows: 220px 1fr;
   justify-items: center;
   align-items: end;
-  padding: 0px 0 100px 0;
+  padding-bottom: 115px;
 }
 
 section > h1 {
@@ -123,10 +124,71 @@ section > h1::after {
 /* about me */
 
 .about-me {
-  width: 100%;
 }
 
 .about-me-article {
   text-align: center;
   line-height: 32px;
+}
+
+/* works */
+
+.works {
+  background-color: #383634;
+  color: white;
+}
+
+/* my-skills */
+
+.my-skills {
+}
+
+.my-skills-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 35px;
+}
+
+.my-skills-article {
+  display: grid;
+  grid-template-rows: 185px 55px 1fr;
+  justify-items: center;
+  width: 260px;
+}
+
+.my-skills-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 5px solid #efb534;
+  width: 150px;
+  height: 150px;
+  margin: 0;
+  font-size: 7rem;
+  color: #efb534;
+}
+
+.my-skills-article-header {
+  font-size: 1.8rem;
+  font-weight: normal;
+  text-align: center;
+}
+
+.my-skills-article-description {
+  text-align: center;
+  line-height: 2;
+}
+
+/* contact */
+
+.contact {
+  background-color: #383634;
+  color: white;
+}
+
+/* footer */
+
+.footer {
+
 }
