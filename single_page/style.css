@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: white;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: #333;
+  font-size: 1.2rem;
+  font-family: 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+}
+
+.container {
+  width: 100vw;
+}
+
+.header {
+  background-color: #191919;
+  color: white;
+  text-align: center;
+  padding: 150px 0 95px 0;
+}
+
+.header-title {
+  /* TODO: find good font */
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
+
+.header-title::before,
+.header-title::after {
+  display: inline-block;
+  content: '';
+  width: 150px;
+  border-bottom: 2px solid white;
+  transform: translateY(-5px);
+}
+
+.header-title::before {
+  margin-right: 30px;
+}
+
+.header-title::after {
+  margin-left: 30px;
+}
+
+.header-main {
+  /* TODO: find good font */
+  margin-top: 69px;
+  font-size: 7rem;
+  font-weight: bold;
+}
+
+.header-description {
+  /* TODO: find good font */
+  margin-top: 63px;
+  font-size: 1.6rem;
+  color: gray;
+}
+
+.header-button-gray,
+.header-button-orange {
+  margin: 60px 10px 0 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 230px;
+  height: 55px;
+  border-radius: 6px;
+}
+
+.header-button-gray {
+  background-color: #aea58f;
+}
+
+.header-button-orange {
+  background-color: #d09e2d;
+}
