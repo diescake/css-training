@@ -22,6 +22,11 @@ body {
   color: #333;
   font-size: 1.4rem;
   font-family: 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+
+  background-image: url('./images/bg.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .container {
@@ -124,6 +129,7 @@ section > h1::after {
 /* about me */
 
 .about-me {
+  background-color: white;
 }
 
 .about-me-article {
@@ -141,6 +147,7 @@ section > h1::after {
 /* my-skills */
 
 .my-skills {
+  background-color: white;
 }
 
 .my-skills-container {
@@ -183,12 +190,63 @@ section > h1::after {
 /* contact */
 
 .contact {
-  background-color: #383634;
   color: white;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-input:focus,
+.contact-textarea:focus {
+  box-shadow: 0 0 6px 1px rgba(255,255,255,0.4) inset
+}
+
+.contact-input {
+  outline: none;
+  padding: 0 15px;
+  width: 545px;
+  height: 55px;
+  background-color: rgba(255, 255, 255, 0.07);
+  font-size: 1.5rem;
+  color: white;
+  border: 1px solid #7e7e7e;
+}
+
+.contact-textarea {
+  outline: none;
+  padding: 15px 15px;
+  margin-top: 10px;
+  width: 545px;
+  height: 170px;
+  background-color: rgba(255, 255, 255, 0.07);
+  font-size: 1.5rem;
+  color: white;
+  border: 1px solid #7e7e7e;
+}
+
+.contact-button {
+  cursor: pointer;
+  margin-top: 50px;
+  width: 220px;
+  height: 55px;
+  font-size: 1.5rem;
+  color: #aea58f;
+  background-color: rgba(0, 0, 0, 0.0);
+  border-radius: 5px;
+  border: 1px solid #7e7e7e;
+}
+
+.contact-button:hover {
+  background-color: rgba(255, 255, 255, 0.07);
 }
 
 /* footer */
 
 .footer {
-
+  padding: 10px 0;
+  color: white;
+  text-align: center;
 }
