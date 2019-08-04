@@ -21,8 +21,9 @@ html {
 body {
   color: #333;
   font-size: 1.4rem;
-  font-family: 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+  font-family: Raleway, 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
 
+  background-color: black;
   background-image: url('./images/bg.png');
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -36,66 +37,63 @@ body {
 /* header */
 
 .header {
-  background-color: #191919;
   color: white;
   text-align: center;
-  padding: 150px 0 95px 0;
+  padding: 170px 30px 80px;
 }
 
 .header-title {
-  /* TODO: find good font */
-  font-size: 2rem;
+  font-size: 2.2rem;
   letter-spacing: 2px;
+  font-weight: normal;
 }
 
 .header-title::before,
 .header-title::after {
-  display: inline-block;
   content: '';
+  display: inline-block;
   width: 150px;
+  height: 2px;
+  margin: 0 30px;
   border-bottom: 2px solid white;
-  transform: translateY(-5px);
-}
-
-.header-title::before {
-  margin-right: 30px;
-}
-
-.header-title::after {
-  margin-left: 30px;
+  background-color: white;
+  vertical-align: middle;
 }
 
 .header-main {
-  /* TODO: find good font */
-  margin-top: 69px;
-  font-size: 7rem;
-  font-weight: bold;
+  margin: 50px 0 40px;
+  font-size: 7.6rem;
 }
 
 .header-description {
-  /* TODO: find good font */
-  margin-top: 63px;
+  margin-top: 50px;
   font-size: 1.6rem;
-  color: gray;
+  color: #888;
 }
 
 .header-button-gray,
-.header-button-orange {
+.header-button-showy {
   margin: 60px 10px 0 10px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 230px;
+  width: 200px;
   height: 55px;
-  border-radius: 6px;
+  border-radius: 4px;
   font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+.header-button-gray:hover,
+.header-button-showy:hover {
+  opacity: 0.9;
 }
 
 .header-button-gray {
   background-color: #aea58f;
 }
 
-.header-button-orange {
+.header-button-showy {
   background-color: #d09e2d;
 }
 
@@ -109,20 +107,18 @@ section {
   padding-bottom: 115px;
 }
 
-section > h1 {
-  /* TODO: find good font */
-  font-size: 3.8rem;
-  font-weight: bold;
-  letter-spacing: 1px;
-  border-bottom: 1px double #999;
+section > h2 {
+  font-size: 4rem;
+  letter-spacing: 2px;
+  border-bottom: 1px solid #999;
   line-height: 55px;
   margin-bottom: 70px;
 }
 
-section > h1::after {
+section > h2::after {
   display: block;
   content: '';
-  border-bottom: 1px double #999;
+  border-bottom: 1px solid #999;
   transform: translateY(6px);
 }
 
@@ -134,7 +130,11 @@ section > h1::after {
 
 .about-me-article {
   text-align: center;
-  line-height: 32px;
+  line-height: 2.5;
+}
+
+.about-me-article:nth-of-type(1) {
+  margin-bottom: 30px;
 }
 
 /* works */
@@ -168,6 +168,7 @@ section > h1::after {
 
 .works-article-detail-container {
   height: 190px;
+  overflow-y: auto;
 }
 
 .works-article > img {
@@ -185,7 +186,7 @@ section > h1::after {
   margin-top: 30px;
   margin-bottom: 37px;
   font-size: 1.2rem;
-  line-height: 26px;
+  line-height: 2;
 }
 
 .works-article-detail-button {
@@ -193,7 +194,7 @@ section > h1::after {
   padding: 10px 45px;
   border: 1px solid white;
   border-radius: 3px;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.15);
 }
 
 /* my-skills */
@@ -220,11 +221,10 @@ section > h1::after {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  border: 5px solid #efb534;
+  border: 4px solid;
   width: 150px;
   height: 150px;
-  margin: 0;
-  font-size: 7rem;
+  font-size: 8rem;
   color: #efb534;
 }
 
@@ -253,42 +253,45 @@ section > h1::after {
 
 .contact-input:focus,
 .contact-textarea:focus {
-  box-shadow: 0 0 6px 1px rgba(255, 255, 255, 0.4) inset;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.5) inset;
+}
+
+.contact-input:placeholder-shown,
+.contact-textarea:placeholder-shown {
+  color: rgba(255, 255, 255, 0.6);
+  opacity: 1;
+}
+
+.contact-input,
+.contact-textarea {
+  background-color: rgba(255, 255, 255, 0.07);
+  padding: 15px;
+  width: 545px;
+  font-size: 1.5rem;
+  color: white;
+  border: 1px solid #7e7e7e;
+  outline: none;
 }
 
 .contact-input {
-  outline: none;
-  padding: 0 15px;
-  width: 545px;
   height: 55px;
-  background-color: rgba(255, 255, 255, 0.07);
-  font-size: 1.5rem;
-  color: white;
-  border: 1px solid #7e7e7e;
 }
 
 .contact-textarea {
-  outline: none;
-  padding: 15px 15px;
   margin-top: 10px;
-  width: 545px;
   height: 170px;
-  background-color: rgba(255, 255, 255, 0.07);
-  font-size: 1.5rem;
-  color: white;
-  border: 1px solid #7e7e7e;
 }
 
 .contact-button {
   cursor: pointer;
-  margin-top: 50px;
+  margin-top: 40px;
   width: 220px;
   height: 55px;
   font-size: 1.5rem;
-  color: #aea58f;
-  background-color: rgba(0, 0, 0, 0);
+  color: rgba(255, 255, 255, 0.6);
+  background-color: transparent;
   border-radius: 5px;
-  border: 1px solid #7e7e7e;
+  border: 1px solid rgba(255, 255, 255, 0.4);
 }
 
 .contact-button:hover {
@@ -298,6 +301,7 @@ section > h1::after {
 /* footer */
 
 .footer {
+  margin-top: 40px;
   padding: 10px 0;
   color: white;
   text-align: center;

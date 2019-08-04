@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>Single page layout</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:700,400" />
     <link rel="stylesheet" href="../reset.css" />
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" />
@@ -11,24 +12,26 @@
   <body>
     <div class="container">
       <header class="header">
-        <h1 class="header-title">Web designer's portfolio</h1>
-        <div class="header-main">HI, MY NAME IS...</div>
-        <div class="header-description">Check out some of my works</div>
+        <p class="header-title">Web designer's portfolio</p>
+        <h1 class="header-main">HI, MY NAME IS...</h1>
+        <div class="header-description">Check out some of my works.</div>
         <a class="header-button-gray" href="#about">LEARN MORE</a>
-        <a class="header-button-orange" href="#contact">SEND MESSAGE</a>
+        <a class="header-button-showy" href="#contact">SEND MESSAGE</a>
       </header>
-      <section class="about-me">
-        <h1>ABOUT ME</h1>
+      <section class="about-me" id="about">
+        <h2>ABOUT ME</h2>
         <article class="about-me-article">
           はじめまして。日本でWebデザイナーをしています。<br />
-          デザインの専門学校を卒業し、制作会社での業務経験を経て、現在はフリーランスとして働いています。<br /><br />
+          デザインの専門学校を卒業し、制作会社での業務経験を経て、現在はフリーランスとして働いています。
+        </article>
+        <article class="about-me-article">
           このサイトは「HTML/CSS
           モダンコーディング」という書籍のサンプルとして作られた、架空のWebデザイナーのポートフォリオサイトです。<br />
-          このサンプルのようなサイトをいちから作る過程を通して、HTMLとCSSの実践的なコーディングノウハウを学ぶことができます。<br />
+          このサンプルのようなサイトをいちから作る過程を通して、HTMLとCSSの実践的なコーディングノウハウを学ぶことができます。
         </article>
       </section>
-      <section class="works">
-        <h1>WORKS</h1>
+      <section class="works" id="works">
+        <h2>WORKS</h2>
         <div class="works-container">
           <article class="works-article">
             <div class="works-article-container">
@@ -80,8 +83,8 @@
           </article>
         </div>
       </section>
-      <section class="my-skills">
-        <h1>MY SKILLS</h1>
+      <section class="my-skills" id="my-skills">
+        <h2>MY SKILLS</h2>
         <div class="my-skills-container">
           <article class="my-skills-article">
             <div class="my-skills-icon">
@@ -118,15 +121,15 @@
           </article>
         </div>
       </section>
-      <section class="contact">
-        <h1>CONTACT</h1>
+      <section class="contact" id="contact">
+        <h2>CONTACT</h2>
         <form class="contact-container">
-          <input class="contact-input" type="text" placeholder="NAME" />
-          <textarea class="contact-textarea" placeholder="MESSAGE"></textarea>
+          <input class="contact-input" type="text" name="name" placeholder="NAME" />
+          <textarea class="contact-textarea" name="message" placeholder="MESSAGE"></textarea>
           <button class="contact-button" type="submit">SEND</button>
         </form>
       </section>
-      <footer class="footer">
+      <footer class="footer" id="footer">
         <p>© sample site</p>
       </footer>
     </div>
