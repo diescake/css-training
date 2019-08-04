@@ -144,6 +144,58 @@ section > h1::after {
   color: white;
 }
 
+.works-article {
+  position: relative;
+  line-height: 0;
+}
+
+.works-container {
+  display: grid;
+  grid-template-columns: repeat(4, 25vw);
+  grid-template-rows: 380px;
+  text-align: center;
+}
+
+.works-article-container {
+  position: absolute;
+  width: 25vw;
+  z-index: 1;
+}
+
+.works-article:nth-of-type(even) > .works-article-container {
+  top: 190px;
+}
+
+.works-article-detail-container {
+  height: 190px;
+}
+
+.works-article > img {
+  width: 25vw;
+  height: 190px;
+}
+
+.works-article:nth-of-type(even) > img:nth-of-type(even),
+.works-article:nth-of-type(odd) > img:nth-of-type(odd) {
+  transform: scale(1, -1);
+  opacity: 0.3;
+}
+
+.works-article-detail-description {
+  margin-top: 30px;
+  margin-bottom: 37px;
+  font-size: 1.2rem;
+  line-height: 26px;
+}
+
+.works-article-detail-button {
+  font-size: 1.2rem;
+  padding: 10px 45px;
+  border: 1px solid white;
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
 /* my-skills */
 
 .my-skills {
@@ -160,7 +212,7 @@ section > h1::after {
   display: grid;
   grid-template-rows: 185px 55px 1fr;
   justify-items: center;
-  width: 260px;
+  width: 266px;
 }
 
 .my-skills-icon {
@@ -201,7 +253,7 @@ section > h1::after {
 
 .contact-input:focus,
 .contact-textarea:focus {
-  box-shadow: 0 0 6px 1px rgba(255,255,255,0.4) inset
+  box-shadow: 0 0 6px 1px rgba(255, 255, 255, 0.4) inset;
 }
 
 .contact-input {
@@ -234,7 +286,7 @@ section > h1::after {
   height: 55px;
   font-size: 1.5rem;
   color: #aea58f;
-  background-color: rgba(0, 0, 0, 0.0);
+  background-color: rgba(0, 0, 0, 0);
   border-radius: 5px;
   border: 1px solid #7e7e7e;
 }
