@@ -5,7 +5,7 @@ Keep the records of my trying out HTML/CSS exercises.
 - [1] The HTML5/CSS3 Modern Codings
   - [standard](./standard)
   - [grid](./grid)
-  - [single-page (under construction)](./single-page)
+  - [single page](./single_page)
 - [2] The CSS Workbook
   - [workbook_3_1_flex](./workbook_3_1_flex)
   - [workbook_3_1_grid](./workbook_3_1_grid)
